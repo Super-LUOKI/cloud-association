@@ -1,0 +1,40 @@
+<view class="user_info_page">
+    <view class="bgc_wrap">
+        <image class="bgc_img" mode="aspectFill" src="http://photo.tuchong.com/3164964/f/461570203.jpg"></image>
+        <view class="bgc_options">
+            <navigator url="/pages/editinfo/index" class="option_item">编辑</navigator>
+            <navigator url="/pages/editinfo/index" class="option_item">关注</navigator>
+        </view>
+    </view>
+    <view class="brief_userinfo_wrap">
+        <image class="avatar" mode="aspectFill" src="http://photo.tuchong.com/3164964/f/461570203.jpg"></image>
+        <view class="info_wrap">
+            <view class="username">小洛君</view>
+            <view class="user_brief">这是简短的阿介绍</view>
+        </view>
+    </view>
+    <view class="detail_info">
+        <van-tabs active="{{ 0 }}" color="#397BFF" tab-class="tab_normal" tab-active-class="tab_active" ellipsis="{{false}}" swipeable animated>
+            <van-tab title="基本信息">
+                <view class="user_info_wrap">
+                    <view class="title">个人信息</view>
+                    <view class="info_item">
+                        <van-icon class="info_icon" name="diamond-o" />
+                        <view class="info_value">男</view>
+                    </view>
+                    <view class="info_item">
+                        <van-icon class="info_icon" name="location-o" />
+                        <view class="info_value">山东省 烟台市 芝罘区</view>
+                    </view>
+                    <view class="info_item">
+                        <van-icon class="info_icon" name="wap-home-o" />
+                        <view class="info_value">鲁东大学</view>
+                    </view>
+                </view>
+            </van-tab>
+            <van-tab title="创作">
+                <PostList></PostList>
+            </van-tab>
+        </van-tabs>
+    </view>
+</view>

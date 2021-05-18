@@ -1,0 +1,141 @@
+<view class="page_post_detail">
+    <!-- 帖子标题等内容 -->
+    <view class="top_content">
+        <view class="post_title">《呼啸山庄》：曾经有多爱，最后就有多恨</view>
+        <view class="post_info_list">
+            <view class="author_name">
+                <text class="the_val">绎洛君</text>
+            </view>
+            <view class="view_count">
+                <van-icon class="the_tag" name="eye-o" />
+                <text class="the_val">787</text>
+            </view>
+            <view class="like_count">
+                <van-icon class="the_tag" name="good-job-o" />
+                <text class="the_val">99</text>
+            </view>
+            <view class="post_time">
+                <text class="the_tag">发布于</text>
+                <text class="the_val">2021年02月02日</text>
+            </view>
+        </view>
+    </view>
+    <!-- 正文内容 -->
+    <view class="post_content">
+        尾巴，她总是叫我多看那些看不下去的书。不不不，她喜欢红色的，她拉着我去偷隔壁翠花姐家母鸡的鸡蛋嘞。不对，她喜欢紫色的！她说她以后长大了在家吃晚饭不开灯只点蜡烛的。”
+    </view>
+    <!-- 底部赞同、评论等操作 -->
+    <view class="footer_option">
+        <view class="left_like">
+            <van-button class="left_like" icon="good-job-o" type="primary" size="small" color="var(--themeColor)" round plain>赞同99</van-button>
+        </view>
+        <view class="right_options">
+            <van-icon class="collection" name="star-o" />
+            <van-icon class="comment" name="chat-o" bindtap="hanldeOpenComment" />
+            <van-icon class="share" name="share-o" />
+        </view>
+    </view>
+
+    <!-- 评论区 -->
+    <van-action-sheet show="{{ isShowComment }}" bind:close="onCloseComment" title="全部评论">
+        <view class="comment_wrap">
+            <view class="comment_item">
+                <image class="user_avatar" src="https://img01.yzcdn.cn/vant/cat.jpeg" mode="aspectFill" lazy-load="true" />
+                <view class="comment_content_wrap">
+                    <view class="username">小小洛君</view>
+                    <view class="content">太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了</view>
+                </view>
+                <view class="like_wrap">
+                    <van-icon class="like_icon" name="good-job-o" />
+                    <view class="like_count">99</view>
+                </view>
+            </view>
+            <view class="comment_item">
+                <image class="user_avatar" src="https://img01.yzcdn.cn/vant/cat.jpeg" mode="aspectFill" lazy-load="true" />
+                <view class="comment_content_wrap">
+                    <view class="username">小小洛君</view>
+                    <view class="content">太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了</view>
+                </view>
+                <view class="like_wrap active">
+                    <van-icon class="like_icon" name="good-job-o" />
+                    <view class="like_count">100</view>
+                </view>
+            </view>
+            <view class="comment_item">
+                <image class="user_avatar" src="https://img01.yzcdn.cn/vant/cat.jpeg" mode="aspectFill" lazy-load="true" />
+                <view class="comment_content_wrap">
+                    <view class="username">小小洛君</view>
+                    <view class="content">太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了</view>
+                </view>
+                <view class="like_wrap">
+                    <van-icon class="like_icon" name="good-job-o" />
+                    <view class="like_count">99</view>
+                </view>
+            </view>
+            <view class="comment_item">
+                <image class="user_avatar" src="https://img01.yzcdn.cn/vant/cat.jpeg" mode="aspectFill" lazy-load="true" />
+                <view class="comment_content_wrap">
+                    <view class="username">小小洛君</view>
+                    <view class="content">太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了</view>
+                </view>
+                <view class="like_wrap">
+                    <van-icon class="like_icon" name="good-job-o" />
+                    <view class="like_count">99</view>
+                </view>
+            </view>
+            <view class="comment_item">
+                <image class="user_avatar" src="https://img01.yzcdn.cn/vant/cat.jpeg" mode="aspectFill" lazy-load="true" />
+                <view class="comment_content_wrap">
+                    <view class="username">小小洛君</view>
+                    <view class="content">太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了</view>
+                </view>
+                <view class="like_wrap">
+                    <van-icon class="like_icon" name="good-job-o" />
+                    <view class="like_count">99</view>
+                </view>
+            </view>
+            <view class="comment_item">
+                <image class="user_avatar" src="https://img01.yzcdn.cn/vant/cat.jpeg" mode="aspectFill" lazy-load="true" />
+                <view class="comment_content_wrap">
+                    <view class="username">小小洛君</view>
+                    <view class="content">太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了</view>
+                </view>
+                <view class="like_wrap">
+                    <van-icon class="like_icon" name="good-job-o" />
+                    <view class="like_count">99</view>
+                </view>
+            </view>
+            <view class="comment_item">
+                <image class="user_avatar" src="https://img01.yzcdn.cn/vant/cat.jpeg" mode="aspectFill" lazy-load="true" />
+                <view class="comment_content_wrap">
+                    <view class="username">小小洛君</view>
+                    <view class="content">太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了</view>
+                </view>
+                <view class="like_wrap">
+                    <van-icon class="like_icon" name="good-job-o" />
+                    <view class="like_count">99</view>
+                </view>
+            </view>
+            <view class="comment_item">
+                <image class="user_avatar" src="https://img01.yzcdn.cn/vant/cat.jpeg" mode="aspectFill" lazy-load="true" />
+                <view class="comment_content_wrap">
+                    <view class="username">小小洛君</view>
+                    <view class="content">太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了太棒了</view>
+                </view>
+                <view class="like_wrap">
+                    <van-icon class="like_icon" name="good-job-o" />
+                    <view class="like_count">99</view>
+                </view>
+            </view>
+            <!-- 发表评论 -->
+            <view class="send_comment">
+                <van-cell-group class="send_input">
+                    <van-field value="{{ value }}" placeholder="输入评论内容" border="{{ false }}" bind:change="onChange" />
+                </van-cell-group>
+                <van-button class="send_btn" type="info" size="small" plain>发布</van-button>
+
+
+            </view>
+        </view>
+    </van-action-sheet>
+</view>

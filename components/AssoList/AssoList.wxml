@@ -1,0 +1,29 @@
+<!-- 帖子列表组件 -->
+<view class="asso_list_wrap">
+    <view class="asso_item" data-id="asso_id" bindtap="handleToDetail">
+        <view class="preview_img">
+            <van-image src="https://img.yzcdn.cn/vant/cat.jpeg" width="150rpx" height="150rpx" radius="750rpx" lazy-load use-loading-slot>
+                <van-loading slot="loading" type="spinner" size="20" vertical />
+            </van-image>
+        </view>
+        <view class="text_info">
+            <view class="main">
+                <view class="title">计算机协会</view>
+                <view class="brief">
+                    per,去年开始跟一些大厂朋我是Casper,去年开始去年开始去…
+                </view>
+            </view>
+            <view class="item_footer">
+                <view class="belong">
+                    <text>信息与电气工程学院</text>
+                </view>
+                <view class="memeber_count">
+                    <van-icon name="friends-o" />
+                    <text>89</text>
+                </view>
+            </view>
+        </view>
+
+    </view>
+
+</view>

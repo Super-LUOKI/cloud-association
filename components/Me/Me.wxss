@@ -1,0 +1,109 @@
+.me_page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.me_page .bgc_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 350rpx;
+}
+.me_page .bgc_img .the_img {
+  width: 100%;
+  height: 100%;
+}
+.me_page .main_content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  margin-top: 180rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.me_page .main_content .main_info_wrap {
+  background-color: #fff;
+  border-radius: 15rpx;
+  padding: 15rpx;
+  width: 660rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.me_page .main_content .main_info_wrap .user_info_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.me_page .main_content .main_info_wrap .user_info_wrap .avatar {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  margin-top: -80rpx;
+  background-color: #fff;
+}
+.me_page .main_content .main_info_wrap .user_info_wrap .username {
+  font-size: 33rpx;
+  color: #000;
+  margin: 25rpx 0 10rpx 0;
+}
+.me_page .main_content .main_info_wrap .user_info_wrap .user_brief {
+  font-size: 26rpx;
+  color: var(--lightTextColor);
+}
+.me_page .main_content .main_info_wrap .other_info_wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 25rpx 0;
+}
+.me_page .main_content .main_info_wrap .other_info_wrap .works,
+.me_page .main_content .main_info_wrap .other_info_wrap .follow,
+.me_page .main_content .main_info_wrap .other_info_wrap .fans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 40rpx;
+  padding: 10rpx 40rpx;
+  border-radius: 15rpx;
+}
+.me_page .main_content .main_info_wrap .other_info_wrap .works .count,
+.me_page .main_content .main_info_wrap .other_info_wrap .follow .count,
+.me_page .main_content .main_info_wrap .other_info_wrap .fans .count {
+  font-size: 35rpx;
+  color: #000;
+  margin-bottom: 15rpx;
+}
+.me_page .main_content .main_info_wrap .other_info_wrap .works .into_title,
+.me_page .main_content .main_info_wrap .other_info_wrap .follow .into_title,
+.me_page .main_content .main_info_wrap .other_info_wrap .fans .into_title {
+  font-size: 26rpx;
+  color: var(--lightTextColor);
+}
+.me_page .main_content .func_list_wrap {
+  background-color: #fff;
+  border-radius: 15rpx;
+  padding: 15rpx;
+  width: 660rpx;
+  margin-top: 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.me_page .main_content .func_list_wrap .func_item {
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx 32rpx;
+  border-radius: 15rpx;
+}
+.me_page .main_content .func_list_wrap .func_item .func_icon {
+  font-size: 60rpx;
+  margin-bottom: 10rpx;
+}
+.me_page .main_content .func_list_wrap .func_item .func_title {
+  font-size: 25rpx;
+}

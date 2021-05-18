@@ -1,0 +1,32 @@
+<view class="create_asso_page">
+    <!-- 步骤条 -->
+    <van-steps steps="{{ steps }}" active="{{ stepBarActiveIndex }}" active-color="var(--themeColor)" />
+    <!-- 社团基本信息 -->
+    <view class="asso_info" hidden="{{stepBarActiveIndex !== 0}}">
+        <van-cell-group>
+            <van-field value="{{ username }}" label="社团名" maxlength="15" placeholder="例如：计算机协会" />
+            <van-field value="{{ phone }}" label="联系方式" maxlength="30" placeholder="例如：QQ 123456" />
+            <van-field value="{{ phone }}" label="归属机构" maxlength="30" placeholder="例如：xxx学院" />
+        </van-cell-group>
+    </view>
+    <!-- 社团介绍 -->
+    <view class="asso_introduction" hidden="{{stepBarActiveIndex !== 1}}">
+        <RichTextEditor bindInputContent="onRichTextInput"></RichTextEditor>
+    </view>
+    <!-- 社团徽标以及主图 -->
+    <view class="asso_img" wx:if="{{stepBarActiveIndex === 2}}">
+        <view class="asso_icon_wrap">
+            <image class="asso_icon" mode="aspectFill" src=""></image>
+            <view class="img_tip">点击上传社团图标</view>
+        </view>
+        <view class="asso_main_img_wrap">
+            <image class="asso_main_img" mode="aspectFill" src=""></image>
+            <view class="img_tip">点击上传社团主图</view>
+        </view>
+
+    </view>
+    <view class="do_step">
+        <van-button wx:if="{{ stepBarActiveIndex !== 0 }}" custom-class="step_btn" bind:click="handleStep" data-step="-1" type="primary" size="normal" color="var(--themeColor)">上一步</van-button>
+        <van-button custom-class="step_btn" bind:click="handleStep" data-step="1" type="primary" size="normal" color="var(--themeColor)">下一步</van-button>
+    </view>
+</view>

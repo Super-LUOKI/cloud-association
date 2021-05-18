@@ -1,0 +1,54 @@
+<view class="me_page clearfix">
+    <view class="bgc_img">
+        <image class="the_img" src="http://photo.tuchong.com/3164964/f/461570203.jpg" mode="aspectFill" lazy-load="false" />
+    </view>
+    <view class="main_content">
+        <view class="main_info_wrap">
+            <view class="user_info_wrap">
+                <image class="avatar" src="https://img01.yzcdn.cn/vant/cat.jpeg" mode="aspectFill" lazy-load="false" />
+                <view class="username">{{username}}</view>
+                <view class="user_brief">{{brief}}</view>
+            </view>
+            <view class="other_info_wrap">
+                <navigator url="/pages/normal_post_list/index?title=我的创作" class="works">
+                    <view class="count">0</view>
+                    <view class="into_title">创作</view>
+                </navigator>
+                <navigator url="/pages/normal_user_list/index?title=关注" class="follow">
+                    <view class="count">0</view>
+                    <view class="into_title">关注</view>
+                </navigator>
+                <navigator url="/pages/normal_user_list/index?title=粉丝" class="fans">
+                    <view class="count">0</view>
+                    <view class="into_title">粉丝</view>
+                </navigator>
+            </view>
+        </view>
+        <view class="func_list_wrap">
+            <navigator url="/pages/normal_asso_list/index?title=我的社团" class="func_item">
+                <van-icon class="func_icon" name="friends-o" />
+                <view class="func_title">我的社团</view>
+            </navigator>
+            <navigator url="/pages/my_message/index" class="func_item">
+                <van-icon class="func_icon" name="chat-o" />
+                <view class="func_title">我的消息</view>
+            </navigator>
+            <navigator url="/pages/normal_post_list/index?title=我的收藏" class="func_item">
+                <van-icon class="func_icon" name="send-gift-o" />
+                <view class="func_title">我的收藏</view>
+            </navigator>
+            <navigator url="/pages/userinfo/index" class="func_item">
+                <van-icon class="func_icon" name="user-o" />
+                <view class="func_title">我的主页</view>
+            </navigator>
+            <navigator url="/pages/createasso/index" class="func_item">
+                <van-icon class="func_icon" name="cluster-o" />
+                <view class="func_title">创建社团</view>
+            </navigator>
+            <navigator url="/pages/normal_post_list/index?title=最近浏览" class="func_item">
+                <van-icon class="func_icon" name="tosend" />
+                <view class="func_title">最近浏览</view>
+            </navigator>
+        </view>
+    </view>
+</view>

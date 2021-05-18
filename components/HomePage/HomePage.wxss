@@ -1,0 +1,92 @@
+.home_page {
+  background-color: #fff;
+}
+.home_page .top_content {
+  position: relative;
+  height: 320rpx;
+}
+.home_page .top_content .bg_block {
+  background-color: var(--themeColor);
+  height: 220rpx;
+  border-radius: 0 0 50% 50%;
+}
+.home_page .top_content .swiper_wrap {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 20rpx;
+  width: 95%;
+  height: 280rpx;
+}
+.home_page .top_content .swiper_wrap .the_swiper {
+  height: 100%;
+}
+.home_page .top_content .swiper_wrap .the_swiper .swiper_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home_page .top_content .swiper_wrap .the_swiper .swiper_item .item_wrap {
+  width: 90%;
+  height: 270rpx;
+  border-radius: 10rpx;
+  margin-bottom: 10rpx;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+}
+.home_page .association {
+  width: 100%;
+}
+.home_page .association .title_wrap {
+  padding: 20rpx 40rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home_page .association .title_wrap .title {
+  font-size: 35rpx;
+  font-weight: 700;
+}
+.home_page .association .title_wrap .more {
+  padding: 10rpx;
+  font-size: 25rpx;
+  display: flex;
+  align-items: center;
+  color: var(--lightTextColor);
+}
+.home_page .association .the_scroll_view {
+  width: 100%;
+}
+.home_page .association .the_scroll_view .asso_content {
+  width: 1680rpx;
+  padding: 20rpx;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.home_page .association .the_scroll_view .asso_content .asso_card {
+  border-radius: 10rpx;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+  width: 400rpx;
+  padding-bottom: 30rpx;
+  margin-right: 20rpx;
+}
+.home_page .association .the_scroll_view .asso_content .asso_card .card_img {
+  width: 100%;
+  height: 210rpx;
+}
+.home_page .association .the_scroll_view .asso_content .asso_card .asso_name {
+  font-size: 28rpx;
+  font-weight: 700;
+  margin: 10rpx 15rpx 10rpx;
+}
+.home_page .association .the_scroll_view .asso_content .asso_card .asso_post .new_post,
+.home_page .association .the_scroll_view .asso_content .asso_card .asso_post .new_acitivity {
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 26rpx;
+  padding: 10rpx 5rpx 5rpx 10rpx;
+}
+.home_page .association .the_scroll_view .asso_content .asso_card .asso_post .new_post .tag,
+.home_page .association .the_scroll_view .asso_content .asso_card .asso_post .new_acitivity .tag {
+  margin-right: 10rpx;
+}

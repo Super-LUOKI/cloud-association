@@ -1,0 +1,80 @@
+.user_info_page {
+  width: 100%;
+}
+.user_info_page .bgc_wrap {
+  width: 100%;
+  position: relative;
+  height: 400rpx;
+}
+.user_info_page .bgc_wrap .bgc_img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.user_info_page .bgc_wrap .bgc_options {
+  position: absolute;
+  right: 50rpx;
+  bottom: 50rpx;
+  display: flex;
+}
+.user_info_page .bgc_wrap .bgc_options .option_item {
+  margin-left: 20rpx;
+  padding: 5rpx 20rpx;
+  font-size: 30rpx;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 30rpx;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.user_info_page .brief_userinfo_wrap {
+  width: 100%;
+  position: relative;
+  padding: 0 30rpx;
+  display: flex;
+  background-color: #fff;
+}
+.user_info_page .brief_userinfo_wrap .avatar {
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50%;
+  border: 5rpx solid #fff;
+  margin-top: -50rpx;
+  z-index: 99;
+}
+.user_info_page .brief_userinfo_wrap .info_wrap {
+  padding: 20rpx;
+}
+.user_info_page .brief_userinfo_wrap .info_wrap .username {
+  font-size: 30rpx;
+  font-weight: 700;
+  margin-bottom: 5rpx;
+}
+.user_info_page .brief_userinfo_wrap .info_wrap .user_brief {
+  font-size: 27rpx;
+  color: var(--lightTextColor);
+}
+.user_info_page .detail_info .user_info_wrap {
+  margin: 30rpx;
+  background-color: #fff;
+  border-radius: 15rpx;
+  padding: 30rpx;
+}
+.user_info_page .detail_info .user_info_wrap .title {
+  margin-bottom: 30rpx;
+  font-weight: 700;
+  font-size: 32rpx;
+}
+.user_info_page .detail_info .user_info_wrap .info_item {
+  margin-bottom: 20rpx;
+  display: flex;
+  align-items: center;
+}
+.user_info_page .detail_info .user_info_wrap .info_item .info_icon {
+  color: #000;
+  font-size: 50rpx;
+  padding-right: 20rpx;
+  font-weight: 700;
+}
+.user_info_page .detail_info .user_info_wrap .info_item .info_value {
+  font-size: 28rpx;
+}

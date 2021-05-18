@@ -1,0 +1,29 @@
+page {
+  background-color: #fff;
+}
+.login_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login_page .cloud_association {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200rpx;
+}
+.login_page .cloud_association .logo {
+  width: 150rpx;
+  height: 150rpx;
+  margin-right: 50rpx;
+}
+.login_page .cloud_association .title {
+  font-size: 70rpx;
+}
+.login_btn {
+  margin-top: 200rpx;
+  width: 650rpx;
+  height: 90rpx!important;
+  font-size: 30rpx!important;
+  background-color: var(--themeColor);
+}

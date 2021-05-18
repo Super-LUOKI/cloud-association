@@ -1,0 +1,46 @@
+page {
+    width: 100%;
+    height: 100%;
+    background-color: #F5F6F8;
+    /* 主题颜色 */
+    --themeColor: #397BFF;
+    /* 主题阴影 */
+    --themeShadow: 0 2px 4px rgba(0, 0, 0, .12);
+    /* 浅灰色背景颜色 */
+    --lightDarkBgc: #F5F6F8;
+    /* 浅灰色的字体颜色 */
+    --lightTextColor: #747474;
+    /* 默认字体颜色 */
+    --darkColor: #1c1c1d;
+}
+
+page,
+view,
+navigator {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 清除浮动 */
+
+.clearfix {
+    overflow: auto;
+    _height: 1%;
+}
+
+
+/* 导航标签样式类（未激活） */
+
+.tab_normal {
+    font-size: 27rpx!important;
+    font-weight: 400!important;
+}
+
+
+/* 导航标签样式类（激活） */
+
+.tab_active {
+    font-size: 28rpx!important;
+    font-weight: 700!important;
+}

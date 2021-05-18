@@ -1,0 +1,34 @@
+<view class="square_page">
+    <!-- 搜索 -->
+    <view class="search_wrap">
+        <SearchInput></SearchInput>
+    </view>
+
+    <!-- 帖子 -->
+    <van-tabs active="{{ 0 }}" color="#397BFF" tab-class="tab_normal" tab-active-class="tab_active" ellipsis="{{false}}" swipeable animated>
+        <van-tab title="数据渲染">
+            <scroll-view scroll-y="true" scroll-with-animation="true">
+                <PostList></PostList>
+            </scroll-view>
+        </van-tab>
+        <van-tab title="数据渲染">
+            <PostList></PostList>
+        </van-tab>
+        <van-tab title="数据渲染">
+            <PostList></PostList>
+        </van-tab>
+        <van-tab title="数据渲染">
+            <PostList></PostList>
+        </van-tab>
+        <van-tab title="数据渲染">
+            <PostList></PostList>
+        </van-tab>
+        <van-tab title="数据渲染">
+            <PostList></PostList>
+        </van-tab>
+    </van-tabs>
+    <!-- 右下角发帖标签 -->
+    <navigator url="/pages/postedit/index" class="write_post">
+        <van-icon name="plus" />
+    </navigator>
+</view>

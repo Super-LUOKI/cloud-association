@@ -1,0 +1,119 @@
+
+  .me_page {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    .bgc_img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 350rpx;
+      .the_img{
+        width: 100%;
+        height: 100%;
+      }
+    
+    }
+  
+    .main_content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        width: 100%;
+        margin-top: 180rpx;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+      .main_info_wrap {
+        background-color: #fff;
+        border-radius: 15rpx;
+        padding: 15rpx;
+        width: 660rpx;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .user_info_wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+         .avatar {
+            width: 150rpx;
+            height: 150rpx;
+            border-radius: 50%;
+            margin-top: -80rpx;
+            background-color: #fff;
+          }
+  
+          .username {
+              font-size: 33rpx;
+              color:#000;
+              margin: 25rpx 0 10rpx 0;
+
+          }
+          .user_brief {
+            font-size: 26rpx;
+            color:var(--lightTextColor)
+          }
+
+         
+        }
+        .other_info_wrap {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin: 25rpx 0;
+          .works,
+          .follow,
+          .fans {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 40rpx;
+            padding: 10rpx 40rpx;
+            border-radius: 15rpx;
+            .count {
+                font-size: 35rpx;
+                color: #000;
+                margin-bottom: 15rpx;
+            }
+  
+            .into_title {
+                font-size: 26rpx;
+            color:var(--lightTextColor)
+            }
+          }
+  
+          
+        }
+        
+      }
+  
+      .func_list_wrap {
+        background-color: #fff;
+        border-radius: 15rpx;
+        padding: 15rpx;
+        width: 660rpx;
+        margin-top: 20rpx;
+        display: flex;
+        flex-wrap: wrap;
+        .func_item {
+            color: #000;
+            display: flex;
+            flex-direction: column;
+            padding: 20rpx 32rpx;
+            border-radius: 15rpx;
+         .func_icon{
+             font-size: 60rpx;
+             margin-bottom: 10rpx;
+         }
+         .func_title{
+             font-size: 25rpx;
+         }
+        }
+      }
+    }
+  }

@@ -1,0 +1,29 @@
+.message_detail_page {
+    .message_item {
+        margin: 15rpx;
+        display: flex;
+        justify-content: flex-start;
+        .msg_text{
+            background-color: #fff;
+            border-radius: 20rpx;
+            padding: 20rpx;
+            font-size: 32rpx;
+        }
+    }
+
+    .message_item.right {
+        display: flex;
+        justify-content: flex-end;
+        .msg_text{
+            background-color: var(--themeColor);
+            color: #fff;
+        }
+    }
+
+    .message_reply {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+    }
+}

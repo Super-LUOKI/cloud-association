@@ -1,0 +1,7 @@
+<!-- 搜索框组件，点击进入到搜索页面 -->
+<view class="search_wrap" bindtap="handleTap">
+    <view class="input_wrap">
+        <van-icon name="search" />
+        <text>{{placeholder}}</text>
+    </view>
+</view>

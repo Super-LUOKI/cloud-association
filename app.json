@@ -1,13 +1,54 @@
 {
-  "pages":[
-    "pages/index/index"
-  ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
-  },
-  "style": "v2",
-  "sitemapLocation": "sitemap.json"
+    "pages": [
+        "pages/index/index",
+        "pages/square/index",
+        "pages/me/index",
+        "pages/login/index",
+        "pages/association/index",
+        "pages/editinfo/index",
+        "pages/postdetail/index",
+        "pages/postedit/index",
+        "pages/userinfo/index",
+        "pages/createasso/index",
+        "pages/normal_post_list/index",
+        "pages/normal_asso_list/index",
+        "pages/normal_user_list/index",
+        "pages/search/index",
+        "pages/my_message/index",
+        "pages/msg_detail/index",
+        "pages/official_notification/index"
+
+
+
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarTitleText": "云社团",
+        "navigationBarBackgroundColor": "#397BFF",
+        "navigationBarTextStyle": "white"
+    },
+    "sitemapLocation": "sitemap.json",
+    "usingComponents": {
+        "van-button": "@vant/weapp/button/index",
+        "van-tabbar": "@vant/weapp/tabbar/index",
+        "van-tabbar-item": "@vant/weapp/tabbar-item/index",
+        "van-icon": "@vant/weapp/icon/index",
+        "van-image": "@vant/weapp/image/index",
+        "van-tag": "@vant/weapp/tag/index",
+        "van-tab": "@vant/weapp/tab/index",
+        "van-tabs": "@vant/weapp/tabs/index",
+        "van-sticky": "@vant/weapp/sticky/index",
+        "van-action-sheet": "@vant/weapp/action-sheet/index",
+        "van-field": "@vant/weapp/field/index",
+        "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
+        "van-dropdown-item": "@vant/weapp/dropdown-item/index",
+        "van-steps": "@vant/weapp/steps/index",
+        "van-radio": "@vant/weapp/radio/index",
+        "van-radio-group": "@vant/weapp/radio-group/index",
+        "van-popup": "@vant/weapp/popup/index",
+        "van-area": "@vant/weapp/area/index",
+        "van-picker": "@vant/weapp/picker/index",
+        "van-search": "@vant/weapp/search/index",
+        "van-empty": "@vant/weapp/empty/index"
+    }
 }

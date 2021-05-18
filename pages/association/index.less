@@ -1,0 +1,183 @@
+.asso_page {
+    background-color: #fff;
+    position: relative;
+    width: 100%;
+
+    .asso_bgc {
+        // position: absolute;
+        // left: 0;
+        // top: 0;
+        width: 100%;
+        height: 550rpx;
+        z-index: 0;
+    }
+
+    .association {
+        width: 750rpx;
+        z-index: 99;
+        margin-top: -20rpx;
+        position: absolute;
+        left: 0;
+        top: 500rpx;
+        border-radius: 25rpx 25rpx 0 0;
+        overflow: hidden;
+
+        .asso_info_wrap {
+            padding: 40rpx;
+            background-color: #fff;
+            padding-bottom: 10rpx;
+
+            .title_wrap {
+                display: flex;
+                align-items: center;
+                padding-bottom: 20rpx;
+
+                .asso_icon {
+                    width: 100rpx;
+                    height: 100rpx;
+                    border-radius: 50%;
+                }
+
+                .asso_title {
+                    font-size: 40rpx;
+                    font-weight: 700;
+                    margin-left: 30rpx;
+                }
+            }
+
+            .asso_introduction_wrap {
+                position: relative;
+                top: 0;
+                left: 0;
+
+                .introduction {
+                    font-size: 29rpx;
+                    line-height: 45rpx;
+                }
+
+                .more {
+                    position: absolute;
+                    bottom: -10rpx;
+                    right: 0rpx;
+                    font-size: 25rpx;
+                    display: flex;
+                    align-items: center;
+                    color: var(--lightTextColor);
+                }
+            }
+
+            .asso_options {
+                margin-top: 10rpx;
+                padding: 15rpx;
+                display: flex;
+                justify-content: flex-end;
+                color: var(--darkColor);
+
+                .option_item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 10rpx;
+
+                    .opt_icon {
+                        font-size: 45rpx;
+                        font-weight: 700;
+                    }
+
+                    .opt_name {
+                        font-size: 26rpx;
+                    }
+                }
+
+            }
+
+            .leaders_wrap {
+                .title_bar {
+                    display: flex;
+                    justify-content: space-between;
+                    padding-top: 10rpx;
+                    padding-bottom: 20rpx;
+
+                    .title_text {
+                        font-size: 35rpx;
+                        font-weight: 700;
+                    }
+
+                    .more {
+                        font-size: 25rpx;
+                        display: flex;
+                        align-items: center;
+                        color: var(--lightTextColor);
+                    }
+                }
+
+                .leader_info_container {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    width: 1400px;
+
+                    .leader_info_item {
+                        display: flex;
+                        width: 320rpx;
+
+                        .avatar {
+                            width: 110rpx;
+                            height: 110rpx;
+                            border-radius: 50%;
+                            margin-right: 20rpx;
+                        }
+
+                        .leader_text_info {
+                            padding: 5rpx 0;
+
+                            .name {
+                                font-weight: 700;
+                                font-size: 30rpx;
+                            }
+
+                            .position {
+                                margin-top: 10rpx;
+                                font-size: 28rpx;
+                                color: var(--lightTextColor);
+
+                            }
+                        }
+
+                    }
+                }
+
+            }
+        }
+
+        .asso_tabs {
+            .user_info_item {
+                background-color: #fff;
+                display: flex;
+                align-items: center;
+                margin: 10rpx 0;
+               
+                padding: 15rpx 30rpx;
+                .avatar {
+                   
+                    width: 90rpx;
+                    height: 90rpx;
+                    border-radius: 50%;
+                    margin-right: 25rpx;
+                }
+
+                .username {
+                    flex: 1;
+                    font-size: 30rpx;
+                }
+                .options{
+                    margin-right: 50rpx;
+                    font-weight: 700;
+                    font-size: 45rpx;
+                    color: var(--lightTextColor);
+                }
+            }
+        }
+
+    }
+
+}

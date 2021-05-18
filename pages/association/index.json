@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "PostList": "../../components/PostList/PostList",
+        "UserListItem": "../../components/UserListItem/UserListItem"
+    },
+    "navigationBarTitleText": "社团详情",
+    "navigationStyle": "custom"
+}

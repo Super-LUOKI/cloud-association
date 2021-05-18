@@ -1,0 +1,98 @@
+.user_info_page {
+    width: 100%;
+
+    .bgc_wrap {
+        width: 100%;
+        position: relative;
+        height: 400rpx;
+
+        .bgc_img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .bgc_options {
+            position: absolute;
+            right: 50rpx;
+            bottom: 50rpx;
+            display: flex;
+
+            .option_item {
+                margin-left: 20rpx;
+                padding: 5rpx 20rpx;
+                font-size: 30rpx;
+                font-weight: 700;
+                color: rgba(255, 255, 255, .8);
+                border-radius: 30rpx;
+                background-color: rgba(255, 255, 255, .4);
+
+            }
+        }
+    }
+
+    .brief_userinfo_wrap {
+        width: 100%;
+        position: relative;
+        padding: 0 30rpx;
+        display: flex;
+        background-color: #fff;
+
+        .avatar {
+            width: 130rpx;
+            height: 130rpx;
+            border-radius: 50%;
+            border: 5rpx solid #fff;
+            margin-top: -50rpx;
+            z-index: 99;
+        }
+
+        .info_wrap {
+            padding: 20rpx;
+
+            .username {
+                font-size: 30rpx;
+                font-weight: 700;
+                margin-bottom: 5rpx;
+            }
+
+            .user_brief {
+                font-size: 27rpx;
+                color: var(--lightTextColor);
+            }
+        }
+    }
+
+    .detail_info {
+        .user_info_wrap {
+            margin: 30rpx;
+            background-color: #fff;
+            border-radius: 15rpx;
+            padding: 30rpx;
+
+            .title {
+                margin-bottom: 30rpx;
+                font-weight: 700;
+                font-size: 32rpx;
+            }
+
+            .info_item {
+                margin-bottom: 20rpx;
+                display: flex;
+                align-items: center;
+                .info_icon {
+                    color: #000;
+                    font-size: 50rpx;
+                    padding-right: 20rpx;
+                    font-weight: 700;
+                }
+
+                .info_value {
+                    font-size: 28rpx;
+
+                }
+
+            }
+        }
+    }
+}

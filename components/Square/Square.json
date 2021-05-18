@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "SearchInput": "../SearchInput/SearchInput",
+        "PostList": "../PostList/PostList"
+    }
+}

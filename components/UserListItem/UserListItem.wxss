@@ -1,0 +1,14 @@
+.user_info_item {
+  display: flex;
+  align-items: center;
+  padding: 15rpx 25rpx;
+}
+.user_info_item .avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin-right: 25rpx;
+}
+.user_info_item .username {
+  font-size: 30rpx;
+}

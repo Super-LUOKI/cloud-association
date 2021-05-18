@@ -1,0 +1,114 @@
+<view class="asso_page">
+    <!-- 背景图 -->
+    <image class="asso_bgc" src="http://photo.tuchong.com/3164964/f/461570203.jpg" mode="aspectFill"></image>
+    <!-- 社团信息 -->
+    <view class="association">
+        <view class="asso_info_wrap">
+            <!-- 标题信息 -->
+            <view class="title_wrap">
+                <image class="asso_icon" src="https://img01.yzcdn.cn/vant/cat.jpeg" mode="aspectFill"></image>
+                <text class="asso_title">计算机协会</text>
+            </view>
+            <!-- 社团介绍 -->
+            <view class="asso_introduction_wrap">
+                <view class="introduction">信息与电气工程学院计算机协会是一个以普及计算机科学知识，为同学们学习交流计算机知识平台的团体。自协会成立以来，协</view>
+                <view class="more">查看更多</view>
+            </view>
+            <!-- 社团操作 -->
+            <view class="asso_options">
+                <view class="option_item">
+                    <van-icon class="opt_icon" name="exchange" />
+                    <text class="opt_name">参加</text>
+                </view>
+                <view class="option_item">
+                    <van-icon class="opt_icon" name="share-o" />
+                    <text class="opt_name">分享</text>
+                </view>
+            </view>
+            <!-- 社团负责人信息展示 -->
+            <view class="leaders_wrap">
+                <view class="title_bar">
+                    <view class="title_text">负责人</view>
+                    <view class="more">查看更多</view>
+                </view>
+                <!-- 此处仅仅展示社团会长、部长等其他信息在【查看更多中以列表的形式展示出来】 -->
+                <scroll-view scroll-x="true" style="width: 650rpx" enhanced="{{true}}" show-scrollbar="{{false}}">
+                    <view class=" leader_info_container ">
+                        <view class="leader_info_item ">
+                            <image class="avatar " src="https://img01.yzcdn.cn/vant/cat.jpeg " mode="aspectFill "></image>
+                            <view class="leader_text_info ">
+                                <view class="name ">羿苏之年</view>
+                                <view class="position ">会长</view>
+                            </view>
+
+                        </view>
+                        <view class="leader_info_item ">
+                            <image class="avatar " src="https://img01.yzcdn.cn/vant/cat.jpeg " mode="aspectFill "></image>
+                            <view class="leader_text_info ">
+                                <view class="name ">彼岸花开</view>
+                                <view class="position ">副会长</view>
+                            </view>
+                        </view>
+                        <view class="leader_info_item ">
+                            <image class="avatar " src="https://img01.yzcdn.cn/vant/cat.jpeg " mode="aspectFill "></image>
+                            <view class="leader_text_info ">
+                                <view class="name ">彼岸花开</view>
+                                <view class="position ">副会长</view>
+                            </view>
+                        </view>
+                    </view>
+
+
+                </scroll-view>
+
+            </view>
+        </view>
+        <!-- 社团资讯、活动、成员管理（仅管理员可见） -->
+        <view class="asso_tabs">
+            <van-tabs active="{{ 0 }} " active="{{ 0 }}" color="#397BFF" tab-class="tab_normal" tab-active-class="tab_active" ellipsis="{{false}}" swipeable animated>
+                <van-tab title="资讯 ">
+                    <PostList></PostList>
+                </van-tab>
+                <van-tab title="活动 ">
+                    <PostList></PostList>
+                </van-tab>
+                <van-tab title="成员 ">
+                    <view class="user_info_item" bindtap="handleMemberOption">
+                        <image class="avatar" src="https://img01.yzcdn.cn/vant/cat.jpeg " mode="aspectFill"></image>
+                        <view class="username">洛君君</view>
+                        <van-icon class="options" name="more-o" />
+                    </view>
+                    <view class="user_info_item" bindtap="handleMemberOption">
+                        <image class="avatar" src="https://img01.yzcdn.cn/vant/cat.jpeg " mode="aspectFill"></image>
+                        <view class="username">洛君君</view>
+                        <van-icon class="options" name="more-o" />
+                    </view>
+                    <view class="user_info_item" bindtap="handleMemberOption">
+                        <image class="avatar" src="https://img01.yzcdn.cn/vant/cat.jpeg " mode="aspectFill"></image>
+                        <view class="username">洛君君</view>
+                        <van-icon class="options" name="more-o" />
+                    </view>
+                    <view class="user_info_item" bindtap="handleMemberOption">
+                        <image class="avatar" src="https://img01.yzcdn.cn/vant/cat.jpeg " mode="aspectFill"></image>
+                        <view class="username">洛君君</view>
+                        <van-icon class="options" name="more-o" />
+                    </view>
+                    <view class="user_info_item" bindtap="handleMemberOption">
+                        <image class="avatar" src="https://img01.yzcdn.cn/vant/cat.jpeg " mode="aspectFill"></image>
+                        <view class="username">洛君君</view>
+                        <van-icon class="options" name="more-o" />
+                    </view>
+                    <view class="user_info_item" bindtap="handleMemberOption">
+                        <image class="avatar" src="https://img01.yzcdn.cn/vant/cat.jpeg " mode="aspectFill"></image>
+                        <view class="username">洛君君</view>
+                        <van-icon class="options" name="more-o" />
+                    </view>
+                </van-tab>
+            </van-tabs>
+        </view>
+
+    </view>
+
+    <!-- 成员操作的动作面板 -->
+    <van-action-sheet show="{{ isOptionsShow }}" actions="{{ memberOptons }}" cancel-text="取消" bind:cancel="onMemberOptionsClose" bind:close="onMemberOptionsClose" bind:select="onMemberOptionsSelect" />
+</view>

@@ -1,4 +1,8 @@
 {
-  "usingComponents": {},
-  "navigationBarTitleText": "首页"
+    "usingComponents": {
+        "HomePage": "../../components/HomePage/HomePage",
+        "Square": "../../components/Square/Square",
+        "Me": "../../components/Me/Me"
+    },
+    "navigationBarTitleText": "云社团"
 }

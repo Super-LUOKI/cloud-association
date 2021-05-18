@@ -1,0 +1,4 @@
+<view class="user_info_item">
+    <image class="avatar" src="https://img01.yzcdn.cn/vant/cat.jpeg " mode="aspectFill"></image>
+    <view class="username">洛君君</view>
+</view>

@@ -1,0 +1,22 @@
+<view class="message_detail_page">
+    <view class="message_item">
+        <text class="msg_text">你好吖，我来自鲁东大学计算机协会</text>
+    </view>
+    <view class="message_item right">
+        <text class="msg_text">你好吖，我来自鲁东大学云社团
+        </text>
+
+    </view>
+    <view class="message_item">
+        <text class="msg_text"> 很高兴认识你</text>
+    </view>
+    <view class="message_reply">
+        <van-cell-group>
+            <van-field value="{{ sms }}" center clearable label="回复" placeholder="此处输入回复内容" border="{{ false }}" use-button-slot>
+                <van-button slot="button" size="small" type="info">
+                    发送
+                </van-button>
+            </van-field>
+        </van-cell-group>
+    </view>
+</view>

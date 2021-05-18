@@ -1,0 +1,40 @@
+<!-- 用户个人信息修改 -->
+<view class="edit_userinfo_page">
+    <view class="info_wrap">
+        <view class="name">昵称</view>
+        <view class="value_select">
+            <van-field class="the_text" value="{{ username }}" clearable border="{{ false }}" placeholder="昵称" />
+        </view>
+    </view>
+    <view class="info_wrap">
+        <view class="name">性别</view>
+        <view class="value_select">
+            <van-radio-group value="{{ sex }}" bind:change="handleSexChange" direction="horizontal">
+                <van-radio name="{{1}}">男</van-radio>
+                <van-radio name="{{0}}">女</van-radio>
+            </van-radio-group>
+        </view>
+    </view>
+    <view class="info_wrap" bindtap="chooseArea">
+        <view class="name">地区</view>
+        <view class="value_select">
+            <view class="the_text">{{areaStr}}</view>
+        </view>
+    </view>
+    <view class="info_wrap" bindtap="chooseSchool">
+        <view class="name">学校</view>
+        <view class="value_select">
+            <view class="the_text">{{schoolStr}}</view>
+        </view>
+    </view>
+
+    <!-- 选择地区弹出层 -->
+    <van-popup show="{{ areaPopupVisible }}" round close-icon="close" position="bottom" custom-style="height: 50%">
+        <van-area title="选择地区" area-list="{{ areaList }}" bind:cancel="handleCancelChooseArea" bind:confirm="handleConfirmChooseArea" />
+    </van-popup>
+
+    <!-- 选择学校弹出层 -->
+    <van-popup show="{{ schoolPopupVisible }}" round close-icon="close" position="bottom" custom-style="height: 50%">
+        <van-picker show-toolbar title="选择学校" columns="{{ schoolList }}" bind:cancel="handleCancelChooseSchool" bind:confirm="handleConfirmChooseSchool" />
+    </van-popup>
+</view>

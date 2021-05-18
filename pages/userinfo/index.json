@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "PostList": "../../components/PostList/PostList"
+    },
+    "navigationStyle": "custom"
+}

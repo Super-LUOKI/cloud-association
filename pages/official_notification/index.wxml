@@ -1,0 +1,6 @@
+<!-- 官方通知页面 -->
+<!-- 引入模板 -->
+<import src="../../lib/wxParse/wxParse.wxml" />
+<view class="notion_page">
+    <template is="wxParse" data="{{wxParseData:content.nodes}}" />
+</view>

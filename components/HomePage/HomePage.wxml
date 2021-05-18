@@ -1,0 +1,130 @@
+<!-- 首页（组件形式） -->
+<view class="home_page">
+    <!-- 搜索框 -->
+    <SearchInput></SearchInput>
+    <!-- 轮播图相关 -->
+    <view class="top_content">
+        <view class="bg_block"></view>
+        <view class="swiper_wrap">
+            <swiper class="the_swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+                <block wx:for="{{background}}" wx:key="*this">
+                    <swiper-item class="swiper_item">
+                        <navigator url="/pages/official_notification/index" class="item_wrap">
+                            <van-image image-class="swiper_item_img" width="100%" radius="10rpx" height="100%" class="swiper_item_img" src="http://photo.tuchong.com/3164964/f/461570203.jpg" fit="cover" />
+                        </navigator>
+
+                    </swiper-item>
+                </block>
+            </swiper>
+        </view>
+    </view>
+    <!-- 热门社团 -->
+    <view class="association">
+        <view class="title_wrap">
+            <view class="title">热门社团</view>
+            <navigator url="/pages/normal_asso_list/index?title=热门社团" class="more">
+                <text>查看更多</text>
+                <van-icon name="arrow" />
+            </navigator>
+        </view>
+        <scroll-view class="the_scroll_view" scroll-x="true" enhanced="{{true}}" show-scrollbar="{{false}}">
+            <view class="asso_content">
+                <navigator url="/pages/association/index?asso_id=000" class="asso_card">
+                    <image class="card_img" src="http://photo.tuchong.com/3164964/f/461570203.jpg" mode="aspectFill" lazy-load="false" />
+                    <view class="asso_name">计算机协会</view>
+                    <view class="asso_post">
+                        <view class="new_post">
+                            <van-tag class="tag" color="#333" plain>资讯</van-tag>
+                            <text>10个字+末尾省略号</text>
+                        </view>
+                        <view class="new_acitivity">
+                            <van-tag class="tag" color="#333" plain>活动</van-tag>
+                            <text>学们学习交流计算机知…</text>
+                        </view>
+                    </view>
+                </navigator>
+                <navigator url="/pages/association/index?asso_id=000" class="asso_card">
+                    <image class="card_img" src="http://photo.tuchong.com/3164964/f/461570203.jpg" mode="aspectFill" lazy-load="false" />
+                    <view class="asso_name">计算机协会</view>
+                    <view class="asso_post">
+                        <view class="new_post">
+                            <van-tag class="tag" color="#333" plain>资讯</van-tag>
+                            <text>10个字+末尾省略号</text>
+                        </view>
+                        <view class="new_acitivity">
+                            <van-tag class="tag" color="#333" plain>活动</van-tag>
+                            <text>学们学习交流计算机知…</text>
+                        </view>
+                    </view>
+                </navigator>
+                <navigator url="/pages/association/index?asso_id=000" class="asso_card">
+                    <image class="card_img" src="http://photo.tuchong.com/3164964/f/461570203.jpg" mode="aspectFill" lazy-load="false" />
+                    <view class="asso_name">计算机协会</view>
+                    <view class="asso_post">
+                        <view class="new_post">
+                            <van-tag class="tag" color="#333" plain>资讯</van-tag>
+                            <text>10个字+末尾省略号</text>
+                        </view>
+                        <view class="new_acitivity">
+                            <van-tag class="tag" color="#333" plain>活动</van-tag>
+                            <text>学们学习交流计算机知…</text>
+                        </view>
+                    </view>
+                </navigator>
+                <navigator url="/pages/association/index?asso_id=000" class="asso_card">
+                    <image class="card_img" src="http://photo.tuchong.com/3164964/f/461570203.jpg" mode="aspectFill" lazy-load="false" />
+                    <view class="asso_name">计算机协会</view>
+                    <view class="asso_post">
+                        <view class="new_post">
+                            <van-tag class="tag" color="#333" plain>资讯</van-tag>
+                            <text>10个字+末尾省略号</text>
+                        </view>
+                        <view class="new_acitivity">
+                            <van-tag class="tag" color="#333" plain>活动</van-tag>
+                            <text>学们学习交流计算机知…</text>
+                        </view>
+                    </view>
+                </navigator>
+            </view>
+        </scroll-view>
+
+
+    </view>
+
+    <!-- 帖子推荐(此处的标签由后台数据接口获取，并渲染) -->
+    <view class="posts_recommend">
+        <van-tabs active="{{ 0 }}" color="#397BFF" tab-class="tab_normal" tab-active-class="tab_active" ellipsis="{{false}}" swipeable animated>
+            <van-tab title="数据渲染">
+                <PostList></PostList>
+            </van-tab>
+            <van-tab title="数据渲染">
+                <PostList></PostList>
+            </van-tab>
+            <van-tab title="数据渲染">
+                <PostList></PostList>
+            </van-tab>
+            <van-tab title="数据渲染">
+                <PostList></PostList>
+            </van-tab>
+            <van-tab title="数据渲染">
+                <PostList></PostList>
+            </van-tab>
+            <van-tab title="数据渲染">
+                <PostList></PostList>
+            </van-tab>
+            <van-tab title="数据渲染">
+                <PostList></PostList>
+            </van-tab>
+            <van-tab title="数据渲染">
+                <PostList></PostList>
+            </van-tab>
+            <van-tab title="数据渲染">
+                <PostList></PostList>
+            </van-tab>
+            <van-tab title="数据渲染">
+                <PostList></PostList>
+            </van-tab>
+        </van-tabs>
+
+    </view>
+</view>

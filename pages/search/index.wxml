@@ -1,0 +1,16 @@
+<view class="search_page">
+    <van-search placeholder="请输入搜索关键词" use-action-slot bind:change="handleSearchChange" bind:search="handleSearch">
+        <view slot="action" bind:tap="handleSearch">搜索</view>
+    </van-search>
+    <view class="search_result" hidden="{{ !isSearched }}">
+        <van-tabs active="{{ activeIndex }}" bind:change="handleTabChange" color="#397BFF" tab-class="tab_normal" tab-active-class="tab_active" ellipsis="{{false}}" swipeable animated>
+            <van-tab title="作品">
+                <PostList></PostList>
+            </van-tab>
+            <van-tab title="社团">
+                <AssoList></AssoList>
+            </van-tab>
+        </van-tabs>
+    </view>
+    <van-empty image="search" description="空空如也~" wx:if="{{ !isSearched }}" />
+</view>

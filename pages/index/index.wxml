@@ -1,0 +1,21 @@
+<!-- 首页 -->
+<view hidden="{{tabBarActiveIndex !== 0}}">
+    <HomePage id="home_page"></HomePage>
+</view>
+<view hidden="{{tabBarActiveIndex !== 1}}">
+    <Square id="square_page"></Square>
+</view>
+
+<view hidden="{{tabBarActiveIndex !== 2}}">
+    <Me id="me_page">
+        我的
+    </Me>
+</view>
+
+
+<!-- 底部导航栏 -->
+<van-tabbar active="{{ tabBarActiveIndex }}" active-color="#397BFF" bind:change="onChange">
+    <van-tabbar-item icon="wap-home">首页</van-tabbar-item>
+    <van-tabbar-item icon="diamond">广场</van-tabbar-item>
+    <van-tabbar-item icon="manager">我的</van-tabbar-item>
+</van-tabbar>

@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "PostList": "../../components/PostList/PostList",
+        "AssoList": "../../components/AssoList/AssoList"
+    },
+    "navigationBarTitleText": "搜索"
+}

@@ -1,0 +1,102 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "帖子详情",
+          "pathName": "pages/postdetail/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "登录",
+          "pathName": "pages/login/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "编辑和发布帖子",
+          "pathName": "pages/postedit/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "社团详情",
+          "pathName": "pages/association/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "添加社团",
+          "pathName": "pages/createasso/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "个人信息展示",
+          "pathName": "pages/userinfo/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "修改个人资料",
+          "pathName": "pages/editinfo/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "纯帖子列表展示页",
+          "pathName": "pages/normal_post_list/index",
+          "query": "title=我的收藏或最近浏览",
+          "scene": null
+        },
+        {
+          "name": "社团列表",
+          "pathName": "pages/normal_asso_list/index",
+          "query": "title=我的社团",
+          "scene": null
+        },
+        {
+          "name": "用户列表",
+          "pathName": "pages/normal_user_list/index",
+          "query": "title=关注",
+          "scene": null
+        },
+        {
+          "name": "搜索",
+          "pathName": "pages/search/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "我的消息",
+          "pathName": "pages/my_message/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "消息详情",
+          "pathName": "pages/msg_detail/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "官方通知页(点击轮播图)",
+          "pathName": "pages/official_notification/index",
+          "query": "notion_id=666",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

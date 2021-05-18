@@ -1,0 +1,6 @@
+.van-tabbar {
+  padding: 5rpx 0;
+}
+.page {
+  background-color: var(--lightDarkBgc);
+}
