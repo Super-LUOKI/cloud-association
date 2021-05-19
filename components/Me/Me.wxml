@@ -4,7 +4,7 @@
     </view>
     <view class="main_content">
         <view class="main_info_wrap">
-            <view class="user_info_wrap">
+            <view class="user_info_wrap" bindtap="handleClickInfo">
                 <image class="avatar" src="https://img01.yzcdn.cn/vant/cat.jpeg" mode="aspectFill" lazy-load="false" />
                 <view class="username">{{username}}</view>
                 <view class="user_brief">{{brief}}</view>
