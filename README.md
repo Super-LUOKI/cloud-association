@@ -68,7 +68,7 @@ _项目整体设计如图  所示。_
 | bg_url | string | 主页背景图片的url |
 | openid | string | 唯一标识微信用户的openid |
 | collections | array | 收藏的帖子id列表 |
-| create_time | Dat | e数据创建时间 |
+| create_time | Date | 数据创建时间 |
 
 #### 3.2.2 消息：message
 
