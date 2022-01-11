@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "ImageCorpper": "../../lib/image-cropper/image-cropper"
+    },
+    "navigationBarTitleText": "图片裁剪"
+}

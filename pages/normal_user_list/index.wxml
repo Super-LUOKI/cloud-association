@@ -1,23 +1,8 @@
 <!-- 用户列表页，可用于 粉丝、关注 -->
 <view class="user_list_page">
-    <navigator url="/pages/userinfo/index" class="user_item">
-        <image class="avatar" mode="aspectFill" src="https://img01.yzcdn.cn/vant/cat.jpeg"></image>
-        <view class="username">彼岸花开</view>
-    </navigator>
-    <navigator url="/pages/userinfo/index" class="user_item">
-        <image class="avatar" mode="aspectFill" src="https://img01.yzcdn.cn/vant/cat.jpeg"></image>
-        <view class="username">彼岸花开</view>
-    </navigator>
-    <navigator url="/pages/userinfo/index" class="user_item">
-        <image class="avatar" mode="aspectFill" src="https://img01.yzcdn.cn/vant/cat.jpeg"></image>
-        <view class="username">彼岸花开</view>
-    </navigator>
-    <navigator url="/pages/userinfo/index" class="user_item">
-        <image class="avatar" mode="aspectFill" src="https://img01.yzcdn.cn/vant/cat.jpeg"></image>
-        <view class="username">彼岸花开</view>
-    </navigator>
-    <navigator url="/pages/userinfo/index" class="user_item">
-        <image class="avatar" mode="aspectFill" src="https://img01.yzcdn.cn/vant/cat.jpeg"></image>
-        <view class="username">彼岸花开</view>
+    <navigator wx:for="{{userInfoList}}" wx:key="_id" url="/pages/userinfo/index?user_id={{item._id}}" class="user_item">
+        <image class="avatar" mode="aspectFill" src="{{item.avatar_url}}"></image>
+        <view class="username">{{item.username}}</view>
     </navigator>
 </view>
+<van-dialog id="van-dialog" />

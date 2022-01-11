@@ -3,7 +3,7 @@ App({
   // 云开发环境初始化
  onLaunch(){
   wx.cloud.init({
-    env: 'cloud-4gz53yoha2aa7185'
+    env: 'cloudcampuscloud-3fz57jfc83c3c28'
   })
  }
 })

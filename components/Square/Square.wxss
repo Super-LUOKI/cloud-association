@@ -7,7 +7,7 @@
   font-weight: 700!important;
 }
 .write_post {
-  position: absolute;
+  position: fixed;
   bottom: 180rpx;
   right: 60rpx;
   width: 110rpx;

@@ -5,27 +5,15 @@
     </view>
 
     <!-- 帖子 -->
-    <van-tabs active="{{ 0 }}" color="#397BFF" tab-class="tab_normal" tab-active-class="tab_active" ellipsis="{{false}}" swipeable animated>
-        <van-tab title="数据渲染">
-            <scroll-view scroll-y="true" scroll-with-animation="true">
-                <PostList></PostList>
-            </scroll-view>
+    <van-tabs bind:change="handleTabChanges" active="{{ 0 }}" color="#397BFF" tab-class="tab_normal" tab-active-class="tab_active" ellipsis="{{false}}" swipeable animated>
+        <van-tab wx:for="{{cateList}}" wx:key="_id" title="{{item.name}}" name="{{item._id}}">
+            <!-- <scroll-view scroll-y="true" scroll-with-animation="true" style="height:1100rpx"> -->
+            <!-- <scroll-view class="the_scroll_view" scroll-x="true" enhanced="{{true}}" show-scrollbar="{{false}}"> -->
+            <PostList postBriefList="{{postBriefList}}"></PostList>
+            <!-- </scroll-view> -->
+            <!-- </scroll-view> -->
         </van-tab>
-        <van-tab title="数据渲染">
-            <PostList></PostList>
-        </van-tab>
-        <van-tab title="数据渲染">
-            <PostList></PostList>
-        </van-tab>
-        <van-tab title="数据渲染">
-            <PostList></PostList>
-        </van-tab>
-        <van-tab title="数据渲染">
-            <PostList></PostList>
-        </van-tab>
-        <van-tab title="数据渲染">
-            <PostList></PostList>
-        </van-tab>
+
     </van-tabs>
     <!-- 右下角发帖标签 -->
     <navigator url="/pages/postedit/index" class="write_post">

@@ -1,7 +1,7 @@
 <view class="login_page">
     <view class="cloud_association">
         <image class="logo" src="../../images/logo.png"></image>
-        <view class="title">云社团</view>
+        <view class="title">小云社团</view>
     </view>
     <van-button custom-class="login_btn" type="info" bindtap="handleUserProfile">微信登录</van-button>
 </view>

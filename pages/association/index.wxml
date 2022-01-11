@@ -1,17 +1,17 @@
 <view class="asso_page">
     <!-- 背景图 -->
-    <image class="asso_bgc" src="http://photo.tuchong.com/3164964/f/461570203.jpg" mode="aspectFill"></image>
+    <image class="asso_bgc" src="{{assoInfo.bg_url}}" mode="aspectFill"></image>
     <!-- 社团信息 -->
     <view class="association">
         <view class="asso_info_wrap">
             <!-- 标题信息 -->
             <view class="title_wrap">
-                <image class="asso_icon" src="https://img01.yzcdn.cn/vant/cat.jpeg" mode="aspectFill"></image>
-                <text class="asso_title">计算机协会</text>
+                <image class="asso_icon" src="{{assoInfo.icon_url}}" mode="aspectFill"></image>
+                <text class="asso_title">{{assoInfo.name}}</text>
             </view>
             <!-- 社团介绍 -->
             <view class="asso_introduction_wrap">
-                <view class="introduction">信息与电气工程学院计算机协会是一个以普及计算机科学知识，为同学们学习交流计算机知识平台的团体。自协会成立以来，协</view>
+                <view class="introduction">{{assoInfo.the_brief}}</view>
                 <view class="more">查看更多</view>
             </view>
             <!-- 社团操作 -->
@@ -35,14 +35,13 @@
                 <scroll-view scroll-x="true" style="width: 650rpx" enhanced="{{true}}" show-scrollbar="{{false}}">
                     <view class=" leader_info_container ">
                         <view class="leader_info_item ">
-                            <image class="avatar " src="https://img01.yzcdn.cn/vant/cat.jpeg " mode="aspectFill "></image>
+                            <image class="avatar " src="{{ownerInfo.avatar_url}}" mode="aspectFill "></image>
                             <view class="leader_text_info ">
-                                <view class="name ">羿苏之年</view>
+                                <view class="name ">{{ownerInfo.username}}</view>
                                 <view class="position ">会长</view>
                             </view>
-
                         </view>
-                        <view class="leader_info_item ">
+                        <!-- <view class="leader_info_item ">
                             <image class="avatar " src="https://img01.yzcdn.cn/vant/cat.jpeg " mode="aspectFill "></image>
                             <view class="leader_text_info ">
                                 <view class="name ">彼岸花开</view>
@@ -55,7 +54,7 @@
                                 <view class="name ">彼岸花开</view>
                                 <view class="position ">副会长</view>
                             </view>
-                        </view>
+                        </view> -->
                     </view>
 
 
@@ -67,12 +66,12 @@
         <view class="asso_tabs">
             <van-tabs active="{{ 0 }} " active="{{ 0 }}" color="#397BFF" tab-class="tab_normal" tab-active-class="tab_active" ellipsis="{{false}}" swipeable animated>
                 <van-tab title="资讯 ">
-                    <PostList></PostList>
+                    <PostList postBriefList="{{noticePostList}}"></PostList>
                 </van-tab>
                 <van-tab title="活动 ">
-                    <PostList></PostList>
+                    <PostList postBriefList="{{activityPostList}}"></PostList>
                 </van-tab>
-                <van-tab title="成员 ">
+                <van-tab title="成员 " wx:if="{{isAdmin}}">
                     <view class="user_info_item" bindtap="handleMemberOption">
                         <image class="avatar" src="https://img01.yzcdn.cn/vant/cat.jpeg " mode="aspectFill"></image>
                         <view class="username">洛君君</view>

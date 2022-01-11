@@ -1,1 +1,2 @@
-<AssoList></AssoList>
+<AssoList assoList="{{assoList}}"></AssoList>
+<van-dialog id="van-dialog" />

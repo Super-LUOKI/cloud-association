@@ -6,7 +6,9 @@ Page({
     },
     innerData: {
         // 不同标签对应的页面标题名字
-        pageTitles: ['云社团', '广场', '我的']
+        pageTitles: ['云社团', '广场', '我的'],
+        // 不同标签对应的id列表
+        pageIds: ['#home_page', '#square_page', '#me_page']
     },
     // 底部导航栏选项改变事件
     onChange(e) {
@@ -16,12 +18,16 @@ Page({
             title: this.innerData.pageTitles[index]
         });
         // 调用组件页面的方法
-        this.selectComponent(['#home_page', '#square_page', '#me_page'][e.detail]).handleShow();
+        this.selectComponent(this.innerData.pageIds[e.detail]).handleShow();
         this.setData({
             tabBarActiveIndex: index
         })
 
     },
+    onShow() {
+        // 调用组件页面的方法
+        this.selectComponent(this.innerData.pageIds[this.data.tabBarActiveIndex]).handleShow();
+    }
 
 
 

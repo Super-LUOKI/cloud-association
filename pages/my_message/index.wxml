@@ -1,24 +1,11 @@
 <view class="message_page">
-    <navigator url="/pages/msg_detail/index?msg_id=000" class="message_item">
-        <image class="user_avatar" mode="aspectFill" src="https://img01.yzcdn.cn/vant/cat.jpeg"></image>
+    <navigator wx:for="{{messageList}}" wx:key="item.userInfo._id" url="/pages/msg_detail/index?target_id={{item.userInfo._id}}" class="message_item">
+        <image class="user_avatar" mode="aspectFill" src="{{item.userInfo.avatar_url}}"></image>
         <view class="text_info_wrap">
-            <view class="username">小洛君</view>
-            <view class="newest_msg">你好呀~我是小洛君 阿巴阿巴阿巴阿巴阿巴阿巴</view>
-        </view>
-    </navigator>
-    <navigator url="/pages/msg_detail/index?msg_id=000" class="message_item">
-        <image class="user_avatar" mode="aspectFill" src="https://img01.yzcdn.cn/vant/cat.jpeg"></image>
-        <view class="text_info_wrap">
-            <view class="username">小洛君</view>
-            <view class="newest_msg">你好呀~我是小洛君 阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴</view>
-        </view>
-    </navigator>
-    <navigator url="/pages/msg_detail/index?msg_id=000" class="message_item">
-        <image class="user_avatar" mode="aspectFill" src="https://img01.yzcdn.cn/vant/cat.jpeg"></image>
-        <view class="text_info_wrap">
-            <view class="username">小洛君</view>
-            <view class="newest_msg">你好呀~我是小洛君 阿巴阿巴阿巴阿巴阿巴阿巴</view>
+            <view class="username">{{item.userInfo.username}}</view>
+            <view class="newest_msg">{{item.brief}}</view>
         </view>
     </navigator>
 
 </view>
+<van-dialog id="van-dialog" />

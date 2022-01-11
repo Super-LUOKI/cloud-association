@@ -99,7 +99,6 @@
 }
 .asso_page .association .asso_info_wrap .leaders_wrap .leader_info_container .leader_info_item {
   display: flex;
-  width: 320rpx;
 }
 .asso_page .association .asso_info_wrap .leaders_wrap .leader_info_container .leader_info_item .avatar {
   width: 110rpx;

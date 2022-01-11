@@ -1,43 +1,44 @@
 <view class="me_page clearfix">
     <view class="bgc_img">
-        <image class="the_img" src="http://photo.tuchong.com/3164964/f/461570203.jpg" mode="aspectFill" lazy-load="false" />
+        <image class="the_img" src="{{userInfo.bg_url ? userInfo.bg_url : defaultBgcUrl}}" mode="aspectFill" lazy-load="false" bindtap="handleChangeBgImg" />
     </view>
     <view class="main_content">
         <view class="main_info_wrap">
             <view class="user_info_wrap" bindtap="handleClickInfo">
-                <image class="avatar" src="https://img01.yzcdn.cn/vant/cat.jpeg" mode="aspectFill" lazy-load="false" />
-                <view class="username">{{username}}</view>
-                <view class="user_brief">{{brief}}</view>
+                <image class="avatar" src="{{userInfo.avatar_url ? userInfo.avatar_url : 'https://636c-cloudcampuscloud-3fz57jfc83c3c28-1305966898.tcb.qcloud.la/images/default_user_avatar.png?sign=e4b42ce739dd020f1965a7fc1d3f1dd6&t=1621865070'}}" mode="aspectFill" lazy-load="false"
+                />
+                <view class="username">{{ isLogin ? userInfo.username : '点击登录'}}</view>
+                <view class="user_brief">{{ isLogin ? userInfo.brief : '点击登录，开启你的社团之旅~'}}</view>
             </view>
             <view class="other_info_wrap">
-                <navigator url="/pages/normal_post_list/index?title=我的创作" class="works">
-                    <view class="count">0</view>
+                <view bindtap="handleWorks" class="works">
+                    <view class="count">{{isLogin ? userInfo.works.length : '0'}}</view>
                     <view class="into_title">创作</view>
-                </navigator>
-                <navigator url="/pages/normal_user_list/index?title=关注" class="follow">
-                    <view class="count">0</view>
+                </view>
+                <view bindtap="handleFollow" class="follow">
+                    <view class="count">{{isLogin ? userInfo.follow.length : '0'}}</view>
                     <view class="into_title">关注</view>
-                </navigator>
-                <navigator url="/pages/normal_user_list/index?title=粉丝" class="fans">
-                    <view class="count">0</view>
+                </view>
+                <view bindtap="handleFans" class="fans">
+                    <view class="count">{{isLogin ? userInfo.fans.length : '0'}}</view>
                     <view class="into_title">粉丝</view>
-                </navigator>
+                </view>
             </view>
         </view>
         <view class="func_list_wrap">
-            <navigator url="/pages/normal_asso_list/index?title=我的社团" class="func_item">
+            <view bindtap="handleMyAssociation" class="func_item">
                 <van-icon class="func_icon" name="friends-o" />
                 <view class="func_title">我的社团</view>
-            </navigator>
+            </view>
             <navigator url="/pages/my_message/index" class="func_item">
                 <van-icon class="func_icon" name="chat-o" />
                 <view class="func_title">我的消息</view>
             </navigator>
-            <navigator url="/pages/normal_post_list/index?title=我的收藏" class="func_item">
+            <view bindtap="handleCollec" class="func_item">
                 <van-icon class="func_icon" name="send-gift-o" />
                 <view class="func_title">我的收藏</view>
-            </navigator>
-            <navigator url="/pages/userinfo/index" class="func_item">
+            </view>
+            <navigator url="/pages/userinfo/index?user_id={{userInfo._id}}" class="func_item">
                 <van-icon class="func_icon" name="user-o" />
                 <view class="func_title">我的主页</view>
             </navigator>
@@ -45,10 +46,12 @@
                 <van-icon class="func_icon" name="cluster-o" />
                 <view class="func_title">创建社团</view>
             </navigator>
-            <navigator url="/pages/normal_post_list/index?title=最近浏览" class="func_item">
+            <!-- <navigator url="/pages/normal_post_list/index?title=最近浏览" class="func_item">
                 <van-icon class="func_icon" name="tosend" />
                 <view class="func_title">最近浏览</view>
-            </navigator>
+            </navigator> -->
         </view>
     </view>
+    <!-- 底部选择背景图片 -->
+    <van-action-sheet show="{{ actionSheetVisible.bgcVisible }}" actions="{{ bgcOptions.actions }}" cancel-text="取消" bind:cancel="handleCancelAs" bind:select="handleBgOptions" data-visible-name="bgcVisible" />
 </view>

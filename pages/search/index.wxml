@@ -4,7 +4,7 @@
     </van-search>
     <view class="search_result" hidden="{{ !isSearched }}">
         <van-tabs active="{{ activeIndex }}" bind:change="handleTabChange" color="#397BFF" tab-class="tab_normal" tab-active-class="tab_active" ellipsis="{{false}}" swipeable animated>
-            <van-tab title="作品">
+            <van-tab title="帖子">
                 <PostList></PostList>
             </van-tab>
             <van-tab title="社团">

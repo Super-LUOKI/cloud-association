@@ -39,14 +39,17 @@ page {
   min-height: 400rpx;
   background-color: #fff;
   font-size: 32rpx;
-  line-height: 60rpx;
-  padding-bottom: 50rpx;
+  line-height: 50rpx;
+  padding-bottom: 150rpx;
+}
+.page_post_detail .post_content .wxParse-img {
+  width: 600rpx!important;
 }
 .page_post_detail .footer_option {
   width: 100%;
   height: 100rpx;
   background-color: #fff;
-  border-top: 0.05rpx solid #ccc;
+  border-top: 0.5px solid #ccc;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -73,30 +76,33 @@ page {
   padding-bottom: 100rpx;
   position: relative;
 }
-.comment_wrap .comment_item {
+.comment_wrap .scroll_view {
+  height: 500rpx;
+}
+.comment_wrap .scroll_view .comment_item {
   display: flex;
   padding-left: 25rpx;
   margin-bottom: 30rpx;
 }
-.comment_wrap .comment_item .user_avatar {
+.comment_wrap .scroll_view .comment_item .user_avatar {
   width: 70rpx;
   height: 70rpx;
   border-radius: 50%;
   margin-right: 20rpx;
 }
-.comment_wrap .comment_item .comment_content_wrap {
+.comment_wrap .scroll_view .comment_item .comment_content_wrap {
   flex: 1;
 }
-.comment_wrap .comment_item .comment_content_wrap .username {
+.comment_wrap .scroll_view .comment_item .comment_content_wrap .username {
   font-weight: 700;
   font-size: 28rpx;
   margin-bottom: 10rpx;
 }
-.comment_wrap .comment_item .comment_content_wrap .content {
+.comment_wrap .scroll_view .comment_item .comment_content_wrap .content {
   font-size: 27rpx;
   color: #444;
 }
-.comment_wrap .comment_item .like_wrap {
+.comment_wrap .scroll_view .comment_item .like_wrap {
   margin-top: 25rpx;
   margin-left: 20rpx;
   width: 50rpx;
@@ -108,10 +114,10 @@ page {
   align-items: center;
   color: var(--lightTextColor);
 }
-.comment_wrap .comment_item .like_wrap .like_icon {
+.comment_wrap .scroll_view .comment_item .like_wrap .like_icon {
   font-size: 35rpx;
 }
-.comment_wrap .comment_item .active {
+.comment_wrap .scroll_view .comment_item .active {
   color: var(--themeColor);
 }
 .comment_wrap .send_comment {

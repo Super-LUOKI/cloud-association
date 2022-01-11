@@ -1,12 +1,16 @@
-// pages/normal_asso_list/index.js
+// 使用js高级语法（async await）
+import regeneratorRuntime from '../../lib/runtime/runtime.js'
+import { checkLogin, getTempNormalIds, removeTempNormalIds, getUserInfo, chooseImage, getTempImg, createUniqueImgName, removeTempImg, setUserInfo, setTempUserIds, getTextFromHtml } from '../../utils/util.js'
+import { getAssoBriefInfos, uploadCloudFile, getTempUrlById, updateUserBgImg, getUserInfoById } from '../../utils/cloud.js'
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-
+        assoList: []
     },
+
 
     /**
      * 生命周期函数--监听页面加载
@@ -15,8 +19,31 @@ Page({
         wx.setNavigationBarTitle({
             title: options.title
         });
+        // 获取社团简介信息
+        this.getAssoBriefList()
     },
 
+    // 获取社团简介信息
+    async getAssoBriefList() {
+        const ids = getTempNormalIds();
+        console.log(ids);
+        const res = await getAssoBriefInfos(ids)
+        if (!res.error) {
+            this.setAssoList(res.msg)
+        }
+
+        removeTempNormalIds()
+    },
+    // 修饰并将社团列表信息添加到data中
+    async setAssoList(rawList) {
+        for (let i = 0; i < rawList.length; i++) {
+            const assoInfo = rawList[i];
+            assoInfo.icon_url = await getTempUrlById(assoInfo.icon_file_id)
+            assoInfo.the_brief = getTextFromHtml(assoInfo.brief.html, 30)
+
+        }
+        this.setData({ assoList: rawList })
+    },
     /**
      * 生命周期函数--监听页面初次渲染完成
      */
@@ -28,7 +55,7 @@ Page({
      * 生命周期函数--监听页面显示
      */
     onShow: function() {
-
+        checkLogin()
     },
 
     /**

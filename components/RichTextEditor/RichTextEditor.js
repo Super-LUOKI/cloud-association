@@ -13,7 +13,7 @@ Component({
         // 富文本编辑器
         formats: {},
         readOnly: false,
-        placeholder: '书写你的社团介绍',
+        placeholder: '开始你的创作',
         editorHeight: 300,
         keyboardHeight: 0,
         isIOS: false,

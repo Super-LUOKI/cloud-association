@@ -1,30 +1,30 @@
 <!-- 帖子列表组件 -->
 <view class="post_list_wrap">
-    <view class="post_item" data-id="post_id" bindtap="handleToDetail">
+    <view wx:for="{{postBriefList}}" wx:key="_id" class="post_item" data-id="{{item._id}}" bindtap="handleToDetail">
         <view class="text_info">
             <view class="main">
-                <view class="title">前端自学团欢迎初学者加</view>
+                <view class="title">{{item.title}}</view>
                 <view class="brief">
-                    我是Casper,去年开始跟一些大厂朋我是Casper,去年开始跟一些大厂朋我是Casper,去年开始去年开始去…
+                    {{item.content.text}}
                 </view>
             </view>
             <view class="item_footer">
                 <view class="author_name">
                     <!-- <van-icon name="contact" /> -->
-                    <text>鲁东大学计算机协会</text>
+                    <text>{{item.userBrief.username}}</text>
                 </view>
                 <view class="like_count">
                     <van-icon name="thumb-circle-o" />
-                    <text>89</text>
+                    <text>{{item.like_count}}</text>
                 </view>
                 <view class="view_count">
                     <van-icon name="eye-o" />
-                    <text>77</text>
+                    <text>{{item.view_count}}</text>
                 </view>
             </view>
         </view>
-        <view class="preview_img">
-            <van-image src="https://img.yzcdn.cn/vant/cat.jpeg" width="200rpx" height="200rpx" radius="10rpx" lazy-load use-loading-slot>
+        <view hidden="{{!item.hasImg}}" class="preview_img">
+            <van-image hidden="{{item.hasImg}}" src="{{item.hasImg ? item.img_url : ''}}" width="200rpx" height="200rpx" radius="10rpx" fit="cover" lazy-load use-loading-slot>
                 <van-loading slot="loading" type="spinner" size="20" vertical />
             </van-image>
         </view>

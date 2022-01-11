@@ -16,7 +16,9 @@
         "pages/search/index",
         "pages/my_message/index",
         "pages/msg_detail/index",
-        "pages/official_notification/index"
+        "pages/official_notification/index",
+        "pages/clip_image/index"
+
 
 
 
@@ -49,6 +51,7 @@
         "van-area": "@vant/weapp/area/index",
         "van-picker": "@vant/weapp/picker/index",
         "van-search": "@vant/weapp/search/index",
-        "van-empty": "@vant/weapp/empty/index"
+        "van-empty": "@vant/weapp/empty/index",
+        "van-dialog": "@vant/weapp/dialog/index"
     }
 }

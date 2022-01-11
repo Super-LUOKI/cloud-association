@@ -23,3 +23,9 @@
   flex: 1;
   font-size: 28rpx;
 }
+.edit_userinfo_page .options {
+  width: 100%;
+  padding: 20rpx;
+  display: flex;
+  justify-content: center;
+}

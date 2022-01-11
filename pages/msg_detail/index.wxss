@@ -1,3 +1,6 @@
+.message_detail_page {
+  padding-bottom: 100rpx;
+}
 .message_detail_page .message_item {
   margin: 15rpx;
   display: flex;

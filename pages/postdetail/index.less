@@ -50,8 +50,12 @@ page {
         min-height: 400rpx;
         background-color: #fff;
         font-size: 32rpx;
-        line-height: 60rpx;
-        padding-bottom: 50rpx;
+        line-height: 50rpx;
+        padding-bottom: 150rpx;
+        .wxParse-img{
+            // 由于富文本编辑器设置的图片样式不起作用，这里强制宽度
+            width: 600rpx!important;
+        }
 
     }
 
@@ -60,7 +64,7 @@ page {
         width: 100%;
         height: 100rpx;
         background-color: #fff;
-        border-top: .05rpx solid #ccc;
+        border-top: .5px solid #ccc;
         position: fixed;
         bottom: 0;
         left: 0;
@@ -72,6 +76,7 @@ page {
         .left_like {
             font-size: 35rpx;
         }
+
 
         .right_options {
             .share,
@@ -95,60 +100,64 @@ page {
     padding: 20rpx;
     padding-bottom: 100rpx;
     position: relative;
-    .comment_item {
-        display: flex;
-        padding-left: 25rpx;
-        margin-bottom: 30rpx;
-
-
-
-        .user_avatar {
-            width: 70rpx;
-            height: 70rpx;
-            border-radius: 50%;
-            margin-right: 20rpx;
-
-        }
-
-        .comment_content_wrap {
-            flex: 1;
-
-            .username {
-                font-weight: 700;
-                font-size: 28rpx;
-                margin-bottom: 10rpx;
-            }
-
-            .content {
-                font-size: 27rpx;
-                color: #444;
-            }
-        }
-
-        .like_wrap {
-            margin-top: 25rpx;
-            margin-left: 20rpx;
-            width: 50rpx;
-            height: 50rpx;
-            font-size: 28rpx;
+    .scroll_view{
+        height: 500rpx;
+        .comment_item {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: var(--lightTextColor);
-
-            .like_icon {
-                font-size: 35rpx;
+            padding-left: 25rpx;
+            margin-bottom: 30rpx;
+    
+    
+    
+            .user_avatar {
+                width: 70rpx;
+                height: 70rpx;
+                border-radius: 50%;
+                margin-right: 20rpx;
+    
             }
-
+    
+            .comment_content_wrap {
+                flex: 1;
+    
+                .username {
+                    font-weight: 700;
+                    font-size: 28rpx;
+                    margin-bottom: 10rpx;
+                }
+    
+                .content {
+                    font-size: 27rpx;
+                    color: #444;
+                }
+            }
+    
+            .like_wrap {
+                margin-top: 25rpx;
+                margin-left: 20rpx;
+                width: 50rpx;
+                height: 50rpx;
+                font-size: 28rpx;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: var(--lightTextColor);
+    
+                .like_icon {
+                    font-size: 35rpx;
+                }
+    
+            }
+    
+            // 点赞后的激活样式
+            .active {
+                color: var(--themeColor);
+            }
+    
         }
-
-        // 点赞后的激活样式
-        .active {
-            color: var(--themeColor);
-        }
-
     }
+    
 
     .send_comment{
         position: absolute;
@@ -160,7 +169,7 @@ page {
         justify-content: center;
         align-items: center;
         box-sizing: border-box;
-
+        
         .send_input{
             width:600rpx
         }

@@ -5,7 +5,7 @@ Component({
      */
     properties: {
         // 帖子信息列表
-        postList: {
+        postBriefList: {
             type: Array,
             value: []
         }

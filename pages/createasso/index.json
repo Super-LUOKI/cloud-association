@@ -2,5 +2,5 @@
     "usingComponents": {
         "RichTextEditor": "../../components/RichTextEditor/RichTextEditor"
     },
-    "navigationBarTitleText": "添加社团"
+    "navigationBarTitleText": "创建社团"
 }

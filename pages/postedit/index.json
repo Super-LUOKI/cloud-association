@@ -1,4 +1,6 @@
 {
-    "usingComponents": {},
+    "usingComponents": {
+        "RichTextEditor": "../../components/RichTextEditor/RichTextEditor"
+    },
     "navigationBarTitleText": "发布作品"
 }

@@ -15,7 +15,7 @@
         {
           "name": "帖子详情",
           "pathName": "pages/postdetail/index",
-          "query": "",
+          "query": "post_id=79550af260b28d9f1b8e7383512694fb",
           "scene": null
         },
         {
@@ -33,11 +33,11 @@
         {
           "name": "社团详情",
           "pathName": "pages/association/index",
-          "query": "",
+          "query": "asso_id=b00064a760b253c91c35366f2a534801",
           "scene": null
         },
         {
-          "name": "添加社团",
+          "name": "创建社团",
           "pathName": "pages/createasso/index",
           "query": "",
           "scene": null
@@ -45,7 +45,7 @@
         {
           "name": "个人信息展示",
           "pathName": "pages/userinfo/index",
-          "query": "",
+          "query": "user_id=cbddf0af60ae60170bdf4c5e4dd45b1d",
           "scene": null
         },
         {
@@ -87,13 +87,19 @@
         {
           "name": "消息详情",
           "pathName": "pages/msg_detail/index",
-          "query": "",
+          "query": "target_id=cbddf0af60ae60170bdf4c5e4dd45b1d",
           "scene": null
         },
         {
           "name": "官方通知页(点击轮播图)",
           "pathName": "pages/official_notification/index",
           "query": "notion_id=666",
+          "scene": null
+        },
+        {
+          "name": "裁剪图片",
+          "pathName": "pages/clip_image/index",
+          "query": "imgSrc=http://tmp/SwtOZattWYCA2507e35ae1df4f58fc156018d5c2ceca.png&width=240&height:=120",
           "scene": null
         }
       ]

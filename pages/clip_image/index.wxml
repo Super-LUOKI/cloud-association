@@ -1,0 +1,7 @@
+<view class="clim_img_page">
+    <ImageCorpper id="img_scopper" imgSrc="{{imgSrc}}" width="{{width}}" height="{{height}}"></ImageCorpper>
+    <view class="options_wrap">
+        <view class="cancel" bindtap="handleCancel">取消</view>
+        <view class="confirm" bindtap="handleConfirm">确定</view>
+    </view>
+</view>

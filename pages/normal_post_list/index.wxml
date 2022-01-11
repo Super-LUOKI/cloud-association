@@ -1,1 +1,2 @@
-<PostList></PostList>
+<PostList postBriefList="{{postBriefList}}"></PostList>
+<van-dialog id="van-dialog" />

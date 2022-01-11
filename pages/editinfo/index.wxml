@@ -3,15 +3,22 @@
     <view class="info_wrap">
         <view class="name">昵称</view>
         <view class="value_select">
-            <van-field class="the_text" value="{{ username }}" clearable border="{{ false }}" placeholder="昵称" />
+            <van-field class="the_text" model:value="{{ username }}" clearable border="{{ false }}" placeholder="昵称" />
+        </view>
+    </view>
+    <view class="info_wrap">
+        <view class="name">简介</view>
+        <view class="value_select">
+            <van-field class="the_text" model:value="{{ brief }}" clearable border="{{ false }}" placeholder="个人简介" />
         </view>
     </view>
     <view class="info_wrap">
         <view class="name">性别</view>
         <view class="value_select">
             <van-radio-group value="{{ sex }}" bind:change="handleSexChange" direction="horizontal">
-                <van-radio name="{{1}}">男</van-radio>
-                <van-radio name="{{0}}">女</van-radio>
+                <van-radio name="{{0}}">男</van-radio>
+                <van-radio name="{{1}}">女</van-radio>
+                <van-radio name="{{2}}">保密</van-radio>
             </van-radio-group>
         </view>
     </view>
@@ -21,10 +28,11 @@
             <view class="the_text">{{areaStr}}</view>
         </view>
     </view>
-    <view class="info_wrap" bindtap="chooseSchool">
+    <view class="info_wrap">
         <view class="name">学校</view>
         <view class="value_select">
-            <view class="the_text">{{schoolStr}}</view>
+            <!-- <view class="the_text">{{schoolStr}}</view> -->
+            <van-field class="the_text" model:value="{{ schoolStr }}" clearable border="{{ false }}" placeholder="学校名称" />
         </view>
     </view>
 
@@ -37,4 +45,9 @@
     <van-popup show="{{ schoolPopupVisible }}" round close-icon="close" position="bottom" custom-style="height: 50%">
         <van-picker show-toolbar title="选择学校" columns="{{ schoolList }}" bind:cancel="handleCancelChooseSchool" bind:confirm="handleConfirmChooseSchool" />
     </van-popup>
+
+    <view class="options">
+        <van-button type="info" bindtap="handleConfirmUpdatae">保存修改</van-button>
+    </view>
+
 </view>
